@@ -66,6 +66,22 @@
         color: green;
         font-weight: bold;
       }
+      .custom-heading {
+        color: red;
+        text-shadow: 0 0 5px white;
+        animation: glowing 0.65s infinite alternate;
+      }
+
+      @keyframes glowing {
+        from {
+          text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px red, 0 0 20px red,
+            0 0 25px red;
+        }
+        to {
+          text-shadow: 0 0 10px white, 0 0 20px white, 0 0 25px red,
+            0 0 30px red, 0 0 35px red;
+        }
+      }
     </style>
   </head>
   <body>
@@ -118,24 +134,18 @@
         commodi consequatur?
       </p>
 
-      <h3>Not Me!</h3>
+      <h3 class="custom-heading">Not Me!</h3>
       <p>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-        illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-        odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-        voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
-        quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
-        eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-        voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
-        corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
-        Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
-        quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-        voluptas nulla pariatur?
+        While I am still at a beginner's stage with CSS, I am deeply captivated
+        by its magic. Every time I use CSS to alter a webpage's style and see
+        the immediate transformation, it brings me immense satisfaction. I'm
+        aware there are many advanced techniques and strategies that I've yet to
+        delve into, but I firmly believe that with continued learning and
+        practice, I'll become more adept in this area. CSS is not just code;
+        it's the art of bringing web pages to life with beauty and vibrancy.
       </p>
 
-      <h3>Me Neither!</h3>
+      <h3 class="custom-heading">Not Me!</h3>
       <p>
         Sed ut perspiciatis unde omnis iste natus error sit voluptatem
         accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
