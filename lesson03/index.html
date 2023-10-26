@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .flow {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+      }
+
+      section {
+        flex: 1;
+        margin: 1em;
+        border: 1px solid;
+      }
+
+      @media (max-width: 600px) {
+        .flow {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+
+        section {
+          margin-right: 1em;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 20px;
+          width: 100px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flow">
+      <section>One</section>
+      <section>Two</section>
+      <section>Three <br />has <br />extra <br />text</section>
+    </div>
+  </body>
+</html>
