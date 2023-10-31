@@ -112,3 +112,35 @@ nav {
 .card-content {
   padding: 1.4em;
 }
+
+/* less than 992px */
+@media only screen and (max-width: 992px) {
+  .wrapper {
+    width: 98%;
+  }
+  .navbar {
+    text-align: center; /* Center the nav items */
+  }
+  .navbar ul {
+    flex-direction: column;
+  }
+  .navbar li {
+    flex: 1 0 100%;
+    margin-bottom: 0.5em;
+  }
+  .navbar li:last-child {
+    margin-bottom: 0; 
+  .card {
+    width: calc(50% - 1em);
+  }
+}
+
+/* less than 600px */
+@media only screen and (max-width: 600px) {
+  .navbar li {
+    margin-bottom: 0.8em; 
+  }
+  .card {
+    width: 100%;
+  }
+}
