@@ -129,7 +129,7 @@ nav {
     margin-bottom: 0.5em;
   }
   .navbar li:last-child {
-    margin-bottom: 0; 
+    margin-bottom: 0; }
   .card {
     width: calc(50% - 1em);
   }
