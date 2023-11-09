@@ -1,0 +1,86 @@
+// Import Bootstrap functions and variables (ensure Bootstrap is installed or imported)
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// Your custom variables
+$primary-color: #6c757d; // Bootstrap's default for primary color
+$secondary-color: #495057; // A slightly darker shade for contrast
+$font-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// Base styles
+body,
+html {
+  height: 100%;
+  font-family: $font-stack;
+  color: $secondary-color;
+  background-color: #f8f9fa; // A light gray background
+}
+
+header {
+  background-color: $primary-color;
+  color: white;
+  padding: 1rem;
+
+  h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+}
+
+main {
+  padding: 1rem;
+
+  img {
+    border-radius: 50%; // Circular image
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    border-bottom: 1px solid $primary-color;
+    padding-bottom: 0.5rem;
+  }
+
+  h3 {
+    color: $primary-color;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li::before {
+      content: "• ";
+      color: $primary-color;
+      font-weight: bold;
+    }
+  }
+}
+
+footer {
+  background-color: $secondary-color;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  p {
+    margin: 0;
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem; // Smaller font size for small screens
+  }
+}
+
+// Import Bootstrap styles
+@import "node_modules/bootstrap/scss/bootstrap";
