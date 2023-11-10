@@ -33,7 +33,7 @@ main {
 main img {
   display: block;
   margin: 20px auto;
-  border-radius: 50%; /* 使图片为圆形 */
+  border-radius: 50%;
 }
 
 h2,
