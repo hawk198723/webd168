@@ -1,0 +1,62 @@
+// Import Google Font Montserrat
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+/// Define primary color variable 
+$primary-color: #1663b7;
+$text-color: #333;
+$background-color: #f8f9fa;
+
+// General body styling
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: $text-color;
+  background-color: $background-color;
+}
+
+// Header styling with nested image
+header {
+  background-color: $primary-color;
+  h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+}
+
+// Card styling with nested elements
+.card {
+  border: 1px solid lighten($primary-color, 15%);
+  h2,
+  h3 {
+    color: darken($primary-color, 10%);
+  }
+  p,
+  li {
+    color: darken($text-color, 10%);
+  }
+}
+
+// Footer styling
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: darken($background-color, 10%);
+  p {
+    margin: 0;
+    color: lighten($text-color, 10%);
+  }
+}
+
+// Responsive image
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 50%;
+}
+
+// Responsive grid adjustments
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+}
