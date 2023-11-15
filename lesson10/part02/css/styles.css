@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -52,12 +51,10 @@ img {
   transform-origin: center center;
 }
 
-/* 鼠标悬停时的旋转动画 */
 .new-image-spin:hover {
   animation: spin 2s infinite linear !important;
 }
 
-/* 定义旋转动画 */
 @keyframes spin {
   from {
     transform: rotate(0deg);

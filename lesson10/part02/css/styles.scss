@@ -62,12 +62,10 @@ img {
   transform-origin: center center;
 }
 
-/* 鼠标悬停时的旋转动画 */
 .new-image-spin:hover {
   animation: spin 2s infinite linear !important;
 }
 
-/* 定义旋转动画 */
 @keyframes spin {
   from {
     transform: rotate(0deg);
