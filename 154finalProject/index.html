@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Responsive Homepage Layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+      img {
+        height: auto;
+        width: 100%;
+        margin-bottom: 15px; /* Space between images */
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .row {
+        margin-bottom: 15px; /* Space between rows */
+        outline: 16px solid white;
+        background-color: lightgray;
+      }
+
+      .col-1 {
+        width: 8.33%;
+      }
+      .col-2 {
+        width: 16.66%;
+      }
+      .col-3 {
+        width: 25%;
+      }
+      .col-4 {
+        width: 33.33%;
+      }
+      .col-5 {
+        width: 41.66%;
+      }
+      .col-6 {
+        width: 50%;
+      }
+      .col-7 {
+        width: 58.33%;
+      }
+      .col-8 {
+        width: 66.66%;
+      }
+      .col-9 {
+        width: 75%;
+      }
+      .col-10 {
+        width: 83.33%;
+      }
+      .col-11 {
+        width: 91.66%;
+      }
+      .col-12 {
+        width: 100%;
+      }
+
+      [class*="col-"] {
+        float: left;
+        padding: 15px;
+        min-height: 1px; /* Make sure that columns are visible even if empty */
+      }
+
+      /* For mobile phones: */
+      @media only screen and (max-width: 768px) {
+        [class*="col-"] {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header with Logo and Search Bar -->
+    <div class="row">
+      <div class="col-2">
+        <img src="https://place-hold.it/300x100&text=Logo" alt="Logo" />
+      </div>
+      <div class="col-4">
+        <img src="https://place-hold.it/300x50&text=Search" alt="Search" />
+      </div>
+      <div class="col-2">
+        <img src="https://place-hold.it/60x25&text=About" />
+      </div>
+      <div class="col-2">
+        <img src="https://place-hold.it/60x25&text=Signup" />
+      </div>
+      <div class="col-2">
+        <img src="https://place-hold.it/60x25&text=Login" />
+      </div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <div class="row">
+      <div class="col-12">
+        <div class="col-2">
+          <img src="https://place-hold.it/60x25&text=nav" />
+        </div>
+        <div class="col-2">
+          <img src="https://place-hold.it/60x25&text=nav" />
+        </div>
+        <div class="col-2">
+          <img src="https://place-hold.it/60x25&text=nav" />
+        </div>
+        <div class="col-2">
+          <img src="https://place-hold.it/60x25&text=nav" />
+        </div>
+        <div class="col-2">
+          <img src="https://place-hold.it/60x25&text=nav" />
+        </div>
+        <div class="col-2">
+          <img src="https://place-hold.it/60x25&text=nav" />
+        </div>
+      </div>
+    </div>
+    <!-- Banner -->
+    <div class="row">
+      <div class="col-12">
+        <div
+          style="background-color: lightgray; padding: 20px; text-align: center"
+        >
+          <!-- Placeholder for text area -->
+          <p>Get good help within your community</p>
+        </div>
+      </div>
+    </div>
+    <!-- Main Content Area -->
+    <div class="row">
+      <!-- Content blocks placeholders -->
+      <div class="col-2">
+        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
+      </div>
+      <div class="col-2">
+        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
+      </div>
+      <div class="col-2">
+        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
+      </div>
+      <div class="col-2">
+        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
+      </div>
+      <div class="col-2">
+        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
+      </div>
+      <div class="col-2">
+        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
+      </div>
+      <div class="col-2">
+        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
+      </div>
+      <div class="col-2">
+        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
+      </div>
+      <div class="col-2">
+        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
+      </div>
+      <div class="col-2">
+        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
+      </div>
+      <div class="col-2">
+        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
+      </div>
+      <div class="col-2">
+        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
+      </div>
+      <div class="col-2">
+        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
+      </div>
+      <div class="col-2">
+        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
+      </div>
+      <div class="col-2">
+        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
+      </div>
+      <div class="col-2">
+        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
+      </div>
+      <div class="col-2">
+        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
+      </div>
+      <div class="col-2">
+        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
+      </div>
+      <div class="col-2">
+        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
+      </div>
+      <div class="col-2">
+        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
+      </div>
+      <div class="col-2">
+        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
+      </div>
+      <div class="col-2">
+        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
+      </div>
+      <div class="col-2">
+        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
+      </div>
+      <div class="col-2">
+        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
+      </div>
+      <!-- Repeat the pattern for more content blocks as needed -->
+    </div>
+
+    <!-- Text Area -->
+
+    <!-- Footer -->
+    <div class="row">
+      <div class="col-2"></div>
+
+      <div class="col-2">
+        <div class="col-12">
+          <img src="https://place-hold.it/400x100&text=Logo" />
+        </div>
+        <div class="col-6">
+          <img src="https://place-hold.it/200x75" />
+        </div>
+        <div class="col-6">
+          <img src="https://place-hold.it/200x75" />
+        </div>
+        <div class="col-6">
+          <img src="https://place-hold.it/200x75" />
+        </div>
+        <div class="col-6">
+          <img src="https://place-hold.it/200x75" />
+        </div>
+      </div>
+      <div class="col-2"></div>
+      <div class="col-2"></div>
+      <div class="col-2">
+        <div class="col-12">
+          <img src="https://place-hold.it/400x100&text=Logo" />
+        </div>
+        <div class="col-6">
+          <img src="https://place-hold.it/200x75" />
+        </div>
+        <div class="col-6">
+          <img src="https://place-hold.it/200x75" />
+        </div>
+        <div class="col-6">
+          <img src="https://place-hold.it/200x75" />
+        </div>
+        <div class="col-6">
+          <img src="https://place-hold.it/200x75" />
+        </div>
+      </div>
+      <div class="col-2"></div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div
+          style="background-color: lightgray; padding: 20px; text-align: center"
+        >
+          <!-- Placeholder for text area -->
+          <p>Text area with relevant information or description.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
