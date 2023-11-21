@@ -1,31 +1,36 @@
 /* CSS Document */
 body {
-	height: 100%;
-	  width: 85%;
-	  margin: 1em auto 0;
-	  font: 90%/1.5 Georgia, "Times New Roman", serif;
-	  background-image: linear-gradient(to top, lightblue, white);
-  }
-  h1 {
-	  font-family: Verdana, Geneva, sans-serif;
-	  font-size: 2.8em;
-	  font-weight: bold;
-	  color: #0D1F59;
-	  text-align: center;
-  }
-  button {
-	text-transform: uppercase;
-	background-color: lightblue;
-	padding: 7px;
-	border: none;
-	border-radius: 5px;
-	margin: 3px;
+  height: 100%;
+  width: 85%;
+  margin: 1em auto 0;
+  font: 90%/1.5 Georgia, "Times New Roman", serif;
+  background-image: linear-gradient(to top, lightblue, white);
 }
-  .buttons {
-	padding-bottom: 50px;
-	display: flex;
-	justify-content: center;
+h1 {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 2.8em;
+  font-weight: bold;
+  color: #0d1f59;
+  text-align: center;
 }
-  .blue-eyes .eye-color {
-	  fill: #175282;	
+button {
+  text-transform: uppercase;
+  background-color: lightblue;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  margin: 3px;
+}
+.buttons {
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+.blue-eyes .eye-color {
+  fill: #175282;
+}
+
+.sad .mouth {
+  transform: rotate(177deg) scale(0.5);
+  transform-origin: 346px 391px;
 }
