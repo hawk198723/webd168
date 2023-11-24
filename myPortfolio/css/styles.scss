@@ -21,7 +21,41 @@ header {
     font-size: 2.5rem;
   }
 }
+//nav
+nav {
+  font-size: 120%; /*fsz120%*/
+  font-weight: bold; /* fwb */
+  padding: 0; /* p1em */
+  text-align: center; /*tac*/
+  background-color:#71a0d2;
+}
 
+nav ul {
+  display: flex; /*df*/
+  flex-direction: row; /*fdr*/
+  flex-wrap: nowrap; /*flw*/
+  justify-content: space-around; /*jc*/
+  list-style-type: none;
+}
+
+nav li {
+  border-bottom: none; /*bbn*/
+}
+nav a {
+  text-decoration: none; /* txd */
+  transition: color 1s ease-out;
+  
+}
+
+nav a:link {
+  color: #ffffff;
+}
+nav a:visited {
+  color: #0f234f;
+}
+nav a:hover {
+  color: #ebee32;
+}
 // Card styling with nested elements
 
 img {
