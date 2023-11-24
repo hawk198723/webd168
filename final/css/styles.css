@@ -133,6 +133,7 @@ header {
   animation: slideTop 1s ease forwards;
   animation-delay: 2s;
   box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+  transition: box-shadow 0.2s;
 }
 .btn-box:hover {
   box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
@@ -149,8 +150,8 @@ header {
     0 5px 10px rgb(204, 23, 217), -15px 0 30px cyan, 15px 0 30px cyan,
     0 -15px 30px rgb(204, 23, 217), 0 15px 30px rgb(204, 23, 217),
     -25px 0 50px cyan, 25px 0 50px cyan, 0 -25px 50px rgb(204, 23, 217),
-    0 25px 50px rgb(204, 23, 217), -35px 0 70px cyan, 35px 0 70px cyan,
-    0 -35px 70px rgb(204, 23, 217), 0 35px 70px rgb(204, 23, 217);
+    0 25px 50px rgb(204, 23, 217), -35px 0 120px cyan, 35px 0 120px cyan,
+    0 -35px 120px rgb(204, 23, 217), 0 35px 120px rgb(204, 23, 217);
 }
 
 @keyframes slideRight {
