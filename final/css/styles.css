@@ -21,7 +21,8 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-  background: url(../img/darkblue.jpeg) no-repeat;
+  /* background: url(../img/darkblue.jpeg) no-repeat; */
+  background-color: #000080;
 }
 .logo {
   position: relative;
@@ -57,12 +58,13 @@ header {
   width: 100%;
   justify-content: space-between;
   height: 100vh;
-  background: url(../img/darkblue.jpeg) no-repeat;
+  /* background: url(../img/darkblue.jpeg) no-repeat; */
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   padding: 70px 10% 0;
+  background-color: #000080;
 }
 .home-content {
   max-width: 600px;
