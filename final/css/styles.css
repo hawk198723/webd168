@@ -7,6 +7,7 @@
 
 body {
   color: #ededed;
+  overflow-x: hidden;
 }
 
 header {
@@ -20,6 +21,7 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  background: url(../img/darkblue.jpeg) no-repeat;
 }
 .logo {
   position: relative;
@@ -154,6 +156,20 @@ header {
     0 -35px 120px rgb(204, 23, 217), 0 35px 120px rgb(204, 23, 217);
 }
 
+.img-drop {
+  max-width: 70%;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  margin-left: 1rem;
+  animation: slideRight 2s ease forwards;
+  box-shadow: -5px 0 10px cyan, 5px 0 10px cyan, 0 -5px 10px rgb(204, 23, 217),
+    0 5px 10px rgb(204, 23, 217), -15px 0 30px cyan, 15px 0 30px cyan,
+    0 -15px 30px rgb(204, 23, 217), 0 15px 30px rgb(204, 23, 217),
+    -25px 0 50px cyan, 25px 0 50px cyan, 0 -25px 50px rgb(204, 23, 217),
+    0 25px 50px rgb(204, 23, 217), -35px 0 120px cyan, 35px 0 120px cyan,
+    0 -35px 120px rgb(204, 23, 217), 0 35px 120px rgb(204, 23, 217);
+}
 @keyframes slideRight {
   0% {
     transform: translateX(-100px);
@@ -194,5 +210,133 @@ header {
   100% {
     transform: translateX(0px);
     opacity: 1;
+  }
+}
+/* ----------------about.html---------------- */
+.home-skills a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #0ef;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #0ef;
+  text-decoration: none;
+  transition: 0.5s ease;
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
+  margin: 30px 15px 30px 0;
+}
+.home-skills a:hover {
+  background: #0ef;
+  color: #081b29;
+  box-shadow: 0 0 20px #0ef;
+}
+/* contact */
+
+main {
+  font-family: "Arial", sans-serif;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #6382a7;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+main h2 {
+  justify-content: center;
+}
+form {
+  display: grid;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+label span {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: cyan;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background: #0ef;
+  color: #081b29;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background: #0ef;
+  color: #081b29;
+  box-shadow: 0 0 20px #0ef;
+}
+
+/* responsive */
+@media (min-width: 1024px) {
+  header {
+    position: fixed; /* 大屏幕时，固定header */
+  }
+  .navbar {
+    display: flex;
+  }
+  .img-fluid {
+    display: block; /* 大屏幕时显示图片 */
+  }
+}
+
+/* 中等屏幕尺寸 */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+  }
+  .img-fluid {
+    display: block; /* 中等屏幕时也显示图片 */
+  }
+}
+
+/* 小屏幕尺寸 */
+@media (max-width: 767px) {
+  header {
+    position: static; /* 小屏幕时，不固定header */
+    padding: 20px; /* 减少padding */
+  }
+  .navbar {
+    display: block; /* 堆叠链接 */
+    text-align: center; /* 居中链接文本 */
+  }
+  .navbar a {
+    display: block; /* 创建块级链接，使其堆叠 */
+  }
+  .img-fluid {
+    display: none; /* 在最小屏幕上不显示图片 */
+  }
+  .img-drop {
+    display: none; /* 在最小屏幕上不显示图片 */
+  }
+  .home {
+    padding-top: 10px;
   }
 }
