@@ -296,45 +296,43 @@ input[type="submit"]:hover {
 /* responsive */
 @media (min-width: 1024px) {
   header {
-    position: fixed; /* 大屏幕时，固定header */
+    position: fixed;
   }
   .navbar {
     display: flex;
   }
   .img-fluid {
-    display: block; /* 大屏幕时显示图片 */
+    display: block;
   }
 }
 
-/* 中等屏幕尺寸 */
 @media (min-width: 768px) and (max-width: 1023px) {
   .navbar {
     display: flex;
     justify-content: space-around;
   }
   .img-fluid {
-    display: block; /* 中等屏幕时也显示图片 */
+    display: block;
   }
 }
 
-/* 小屏幕尺寸 */
 @media (max-width: 767px) {
   header {
-    position: static; /* 小屏幕时，不固定header */
-    padding: 20px; /* 减少padding */
+    position: static;
+    padding: 20px;
   }
   .navbar {
-    display: block; /* 堆叠链接 */
-    text-align: center; /* 居中链接文本 */
+    display: block;
+    text-align: center;
   }
   .navbar a {
-    display: block; /* 创建块级链接，使其堆叠 */
+    display: block;
   }
   .img-fluid {
-    display: none; /* 在最小屏幕上不显示图片 */
+    display: none;
   }
   .img-drop {
-    display: none; /* 在最小屏幕上不显示图片 */
+    display: none;
   }
   .home {
     padding-top: 10px;
