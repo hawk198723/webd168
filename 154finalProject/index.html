@@ -3,266 +3,183 @@
   <head>
     <title>Responsive Homepage Layout</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style type="text/css">
-      img {
-        height: auto;
-        width: 100%;
-        margin-bottom: 15px; /* Space between images */
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      .row::after {
-        content: "";
-        clear: both;
-        display: table;
-      }
-
-      .row {
-        margin-bottom: 15px; /* Space between rows */
-        outline: 16px solid white;
-        background-color: lightgray;
-      }
-
-      .col-1 {
-        width: 8.33%;
-      }
-      .col-2 {
-        width: 16.66%;
-      }
-      .col-3 {
-        width: 25%;
-      }
-      .col-4 {
-        width: 33.33%;
-      }
-      .col-5 {
-        width: 41.66%;
-      }
-      .col-6 {
-        width: 50%;
-      }
-      .col-7 {
-        width: 58.33%;
-      }
-      .col-8 {
-        width: 66.66%;
-      }
-      .col-9 {
-        width: 75%;
-      }
-      .col-10 {
-        width: 83.33%;
-      }
-      .col-11 {
-        width: 91.66%;
-      }
-      .col-12 {
-        width: 100%;
-      }
-
-      [class*="col-"] {
-        float: left;
-        padding: 15px;
-        min-height: 1px; /* Make sure that columns are visible even if empty */
-      }
-
-      /* For mobile phones: */
-      @media only screen and (max-width: 768px) {
-        [class*="col-"] {
-          width: 100%;
-        }
-      }
-    </style>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
     <!-- Header with Logo and Search Bar -->
-    <div class="row">
-      <div class="col-2">
-        <img src="https://place-hold.it/300x100&text=Logo" alt="Logo" />
+    <header>
+      <h1 class="logo-text">
+        <a href="index.html" class="logo-link">SkillShare</a>
+      </h1>
+      <div class="search-container">
+        <input type="search" placeholder="Search" class="search-input" />
+        <i class="bx bx-search-alt-2 search-icon"></i>
       </div>
-      <div class="col-4">
-        <img src="https://place-hold.it/300x50&text=Search" alt="Search" />
-      </div>
-      <div class="col-2">
-        <img src="https://place-hold.it/60x25&text=About" />
-      </div>
-      <div class="col-2">
-        <img src="https://place-hold.it/60x25&text=Signup" />
-      </div>
-      <div class="col-2">
-        <img src="https://place-hold.it/60x25&text=Login" />
-      </div>
-    </div>
+      <nav>
+        <a href="#">About</a>
+        <a href="#">Sign Up</a>
+        <a href="#">Log In</a>
+      </nav>
+    </header>
 
     <!-- Navigation Menu -->
-    <div class="row">
-      <div class="col-12">
-        <div class="col-2">
-          <img src="https://place-hold.it/60x25&text=nav" />
-        </div>
-        <div class="col-2">
-          <img src="https://place-hold.it/60x25&text=nav" />
-        </div>
-        <div class="col-2">
-          <img src="https://place-hold.it/60x25&text=nav" />
-        </div>
-        <div class="col-2">
-          <img src="https://place-hold.it/60x25&text=nav" />
-        </div>
-        <div class="col-2">
-          <img src="https://place-hold.it/60x25&text=nav" />
-        </div>
-        <div class="col-2">
-          <img src="https://place-hold.it/60x25&text=nav" />
-        </div>
-      </div>
-    </div>
-    <!-- Banner -->
-    <div class="row">
-      <div class="col-12">
-        <div
-          style="background-color: lightgray; padding: 20px; text-align: center"
-        >
-          <!-- Placeholder for text area -->
-          <p>Get good help within your community</p>
-        </div>
-      </div>
-    </div>
-    <!-- Main Content Area -->
-    <div class="row">
-      <!-- Content blocks placeholders -->
-      <div class="col-2">
-        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
-      </div>
-      <div class="col-2">
-        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
-      </div>
-      <div class="col-2">
-        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
-      </div>
-      <div class="col-2">
-        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
-      </div>
-      <div class="col-2">
-        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
-      </div>
-      <div class="col-2">
-        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
-      </div>
-      <div class="col-2">
-        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
-      </div>
-      <div class="col-2">
-        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
-      </div>
-      <div class="col-2">
-        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
-      </div>
-      <div class="col-2">
-        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
-      </div>
-      <div class="col-2">
-        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
-      </div>
-      <div class="col-2">
-        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
-      </div>
-      <div class="col-2">
-        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
-      </div>
-      <div class="col-2">
-        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
-      </div>
-      <div class="col-2">
-        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
-      </div>
-      <div class="col-2">
-        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
-      </div>
-      <div class="col-2">
-        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
-      </div>
-      <div class="col-2">
-        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
-      </div>
-      <div class="col-2">
-        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
-      </div>
-      <div class="col-2">
-        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
-      </div>
-      <div class="col-2">
-        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
-      </div>
-      <div class="col-2">
-        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
-      </div>
-      <div class="col-2">
-        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
-      </div>
-      <div class="col-2">
-        <img src="https://place-hold.it/200x250&text=content" alt="Content" />
-      </div>
-      <!-- Repeat the pattern for more content blocks as needed -->
-    </div>
+    <nav class="main-nav">
+      <a href="#">Find a helper</a>
+      <a href="#">Plumbing</a>
+      <a href="#">Housekeeping</a>
+      <a href="#">Childcare</a>
+      <a href="#">Computer repair</a>
+      <a href="#">Elderly care</a>
+    </nav>
 
-    <!-- Text Area -->
+    <!-- Banner -->
+    <section class="banner">
+      <h1 class="banner_title">Get good help within your community</h1>
+    </section>
+
+    <!-- Main Content Area -->
+    <main class="content-area">
+      <!-- Content blocks placeholders -->
+      <article class="service">
+        <a href="post1.html">
+          <img src="img/beauty_placeholder.png" alt="Beauty and makeup" />
+          <div class="service-info">
+            <p>Beauty and makeup</p>
+            <span>$25/hr</span>
+            <span>Linda Vista, CA 92111</span>
+          </div>
+        </a>
+      </article>
+
+      <article class="service">
+        <a href="post2.html">
+          <img src="img/house_placeholder.jpeg" alt="Housekeeping" />
+          <div class="service-info">
+            <p>Housekeeping</p>
+            <span>$30/hr</span>
+            <span>Poway, CA 92133</span>
+          </div>
+        </a>
+      </article>
+
+      <article class="service">
+        <a href="post3.html">
+          <img src="img/ecare_placeholder.jpeg" alt="Elderly care" />
+          <div class="service-info">
+            <p>Elderly care</p>
+            <span>$25/hr</span>
+            <span>Linda Vista, CA 92111</span>
+          </div>
+        </a>
+      </article>
+
+      <article class="service">
+        <a href="post1.html">
+          <img src="img/beauty1_placeholder.png" alt="Beauty and makeup" />
+          <div class="service-info">
+            <p>Beauty and makeup</p>
+            <span>$25/hr</span>
+            <span>Linda Vista, CA 92111</span>
+          </div>
+        </a>
+      </article>
+
+      <article class="service">
+        <a href="post1.html">
+          <img src="img/beauty2_placeholder.png" alt="Beauty and makeup" />
+          <div class="service-info">
+            <p>Beauty and makeup</p>
+            <span>$25/hr</span>
+            <span>Linda Vista, CA 92111</span>
+          </div>
+        </a>
+      </article>
+
+      <article class="service">
+        <a href="post1.html">
+          <img src="img/beauty3_placeholder.png" alt="Beauty and makeup" />
+          <div class="service-info">
+            <p>Beauty and makeup</p>
+            <span>$25/hr</span>
+            <span>Linda Vista, CA 92111</span>
+          </div>
+        </a>
+      </article>
+
+      <article class="service">
+        <a href="post1.html">
+          <img src="img/beauty3_placeholder.png" alt="Beauty and makeup" />
+          <div class="service-info">
+            <p>Beauty and makeup</p>
+            <span>$25/hr</span>
+            <span>Linda Vista, CA 92111</span>
+          </div>
+        </a>
+      </article>
+
+      <article class="service">
+        <a href="post1.html">
+          <img src="img/beauty1_placeholder.png" alt="Beauty and makeup" />
+          <div class="service-info">
+            <p>Beauty and makeup</p>
+            <span>$25/hr</span>
+            <span>Linda Vista, CA 92111</span>
+          </div>
+        </a>
+      </article>
+
+      <article class="service">
+        <a href="post1.html">
+          <img src="img/beauty_placeholder.png" alt="Beauty and makeup" />
+          <div class="service-info">
+            <p>Beauty and makeup</p>
+            <span>$25/hr</span>
+            <span>Linda Vista, CA 92111</span>
+          </div>
+        </a>
+      </article>
+
+      <!-- Repeat for other services -->
+    </main>
 
     <!-- Footer -->
-    <div class="row">
-      <div class="col-2"></div>
+    <footer>
+      <div class="footer-content">
+        <div class="contact">
+          <h3>Find us</h3>
+          <div class="contact-info">
+            <address>SD Loft: 330 Park Blvd, San Diego, CA 92101</address>
+            <p>Phone: (858)-888-0120</p>
+          </div>
+        </div>
 
-      <div class="col-2">
-        <div class="col-12">
-          <img src="https://place-hold.it/400x100&text=Logo" />
-        </div>
-        <div class="col-6">
-          <img src="https://place-hold.it/200x75" />
-        </div>
-        <div class="col-6">
-          <img src="https://place-hold.it/200x75" />
-        </div>
-        <div class="col-6">
-          <img src="https://place-hold.it/200x75" />
-        </div>
-        <div class="col-6">
-          <img src="https://place-hold.it/200x75" />
-        </div>
-      </div>
-      <div class="col-2"></div>
-      <div class="col-2"></div>
-      <div class="col-2">
-        <div class="col-12">
-          <img src="https://place-hold.it/400x100&text=Logo" />
-        </div>
-        <div class="col-6">
-          <img src="https://place-hold.it/200x75" />
-        </div>
-        <div class="col-6">
-          <img src="https://place-hold.it/200x75" />
-        </div>
-        <div class="col-6">
-          <img src="https://place-hold.it/200x75" />
-        </div>
-        <div class="col-6">
-          <img src="https://place-hold.it/200x75" />
+        <div class="social-media">
+          <h3>Follow us</h3>
+
+          <div class="icons-grid">
+            <a href="https://facebook.com" class="social-icon"
+              ><i class="bx bxl-facebook-square"></i
+            ></a>
+            <a href="https://instagram.com" class="social-icon"
+              ><i class="bx bxl-instagram-alt"></i
+            ></a>
+            <a href="https://twitter.com" class="social-icon"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+            <a href="https://tiktok.com" class="social-icon"
+              ><i class="bx bxl-tiktok"></i
+            ></a>
+          </div>
         </div>
       </div>
-      <div class="col-2"></div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <div
-          style="background-color: lightgray; padding: 20px; text-align: center"
-        >
-          <!-- Placeholder for text area -->
-          <p>Copyright &copy; Jason Wang 2023</p>
-        </div>
+      <div class="copyright">
+        <p>Copyright &copy; Jason Wang 2023</p>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
